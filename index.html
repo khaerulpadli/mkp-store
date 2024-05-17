@@ -56,18 +56,42 @@ tr:hover {
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
-    .container {
-        margin: 10px;
-        padding: 10px;
-    }
+/* Responsiveness for Table */
+@media only screen and (max-width: 800px) {
     table {
-        font-size: 14px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: block;
+        overflow-x: auto;
     }
     th, td {
-        padding: 8px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    th:nth-child(1),
+    td:nth-child(1) {
+        min-width: 50px;
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+        min-width: 150px;
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+        min-width: 100px;
+    }
+    th:nth-child(4),
+    td:nth-child(4) {
+        min-width: 100px;
+    }
+    th:nth-child(5),
+    td:nth-child(5) {
+        min-width: 150px;
     }
 }
+
+
 
 /* Additional Styling for a More Attractive Table */
 .container {
@@ -177,7 +201,7 @@ table button a:hover {
     <div class="logo-container">
         <img src="mkp.jpeg" alt="Logo" class="logo">
         <div class="scrolling-text">
-            <span><b>SELAMAT DATANG DI TOKO KAMI DI MKP STORE SELAMAT BERBELANJA!! </b></span>
+            <span><b>SELAMAT DATANG DI TOKO KAMI MKP STORE SELAMAT BERBELANJA!! </b></span>
         </div>
     </div>
     <h2>Daftar Harga Paket XL<br> MKP STORE</h2>
