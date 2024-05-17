@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKP STORE</title>
+ <style>
+    /* General Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    background-color: #e1d6d6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0cd731;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #e5e5e5;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Additional Styling for a More Attractive Table */
+.container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.detail-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.detail-link:hover {
+    text-decoration: underline;
+    
+}
+/* Button Styles within Table */
+table button {
+    background-color: #0cd731;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table button:hover {
+    background-color: #2242fc;
+}
+
+/* Link Styles within Button */
+table button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table button a:hover {
+    text-decoration: underline;
+}
+ /* Logo Styles */
+ .logo-container {
+            position: relative; /* Set position to relative */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px; /* Add some space between logo and table */
+        }
+
+        .logo {
+            top: 30px;
+            max-width: 100px; /* Limit the maximum width of the logo */
+            border-radius: 50%; /* Make the logo round */
+            position: relative; /* Set position to relative */
+            z-index: 1; /* Set z-index to make sure logo is above the scrolling text */
+        }
+
+        /* Scrolling Text Styles */
+        .scrolling-text {
+            overflow: hidden;
+            white-space: nowrap;
+            position: absolute; /* Set position to absolute */
+            top: 0; /* Position it at the top */
+            left: 0; /* Position it at the left */
+            width: 100%; /* Make it full width */
+            z-index: 0; /* Set z-index to make sure it's behind the logo */
+            animation: marquee 15s linear infinite;
+           
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        /* Rules Styles */
+        .rules-list {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .rule-item {
+            margin-bottom: 10px;
+        }
+
+        .rule-item p {
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+ </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo-container">
+        <img src="mkp.jpeg" alt="Logo" class="logo">
+        <div class="scrolling-text">
+            <span><b>SELAMAT DATANG DI TOKO KAMI DI MKP STORE SELAMAT BERBELANJA!! </b></span>
+        </div>
+    </div>
+    <h2>Daftar Harga Paket XL<br> MKP STORE</h2>
+    
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Paket Flex Bundling </th>
+            <th>Kuota</th>
+            <th>Harga</th>
+            <th>Detail</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Paket A</td>
+            <td>108GB </td>
+            <td>Rp 60.000</td>
+            <td><button><a href="paketa.html" class="detail-link">Lihat Detail</a></button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Paket B</td>
+            <td>52GB</td>
+            <td>Rp 50.000</td>
+            <td><button><a href="paketb.html" class="detail-link">Lihat Detail</a></button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Paket C</td>
+            <td>108GB</td>
+            <td>Rp 50.000</td>
+            <td><button><a href="paketc.html" class="detail-link">Lihat Detail</a></button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Paket D</td>
+            <td>52GB</td>
+            <td>Rp 40.000</td>
+            <td><button><a href="paketd.html" class="detail-link">Lihat Detail</a></button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Paket E</td>
+            <td>48GB</td>
+            <td>Rp 40.000</td>
+            <td><button><a href="pakete.html" class="detail-link">Lihat Detail</a></button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Paket F</td>
+            <td>Flex S+ UNLIMATED</td>
+            <td>Rp 40.000</td>
+            <td><button><a href="pakete.html" class="detail-link">Lihat Detail</a></button></td>
+        </tr>
+    </table>
+</div>
+<h2>Rules Paket</h2>
+    <ol class="rules-list">
+        <li class="rule-item">
+            <p><strong>Paket Flex Bundling:</strong></p>
+            <ul>
+                <li>Harga yang tercantum adalah harga per bulan.</li>
+                <li>Kuota yang tertera adalah kuota internet yang dapat digunakan dalam sebulan.</li>
+            </ul>
+        </li>
+        <li class="rule-item">
+            <p><strong>Detail Paket:</strong></p>
+            <ul>
+                <li>Setiap paket memiliki kuota internet yang berbeda-beda.</li>
+                <li>Harga paket dapat berubah sewaktu-waktu sesuai dengan kebijakan penyedia layanan.</li>
+                <li>Informasi lebih lanjut mengenai detail paket dapat dilihat dengan menekan tombol "Lihat Detail" di setiap baris paket.</li>
+            </ul>
+        </li>
+        <li class="rule-item">
+            <p><strong>Non Garansi</strong></p>
+            <ul>
+                <li>Paket ini tidak resmi/Un- official</li>
+                <li>Jika paket sudah masuk tidak ada pengembalian dana</li>
+                <li>Membeli = setuju</li>
+            </ul>
+        </li>
+        <!-- Tambahkan aturan lainnya sesuai kebutuhan -->
+    </ol>
+</body>
+</html>
